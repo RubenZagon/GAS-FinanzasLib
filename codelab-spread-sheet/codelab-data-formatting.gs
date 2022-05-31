@@ -5,6 +5,12 @@ function onOpen() {
         .addItem('Format row header', 'formatRowHeader')
         .addItem('Format column header', 'formatColumnHeader')
         .addItem('Format dataset', 'formatDataset')
+        .addSeparator()
+        .addSubMenu(ui.createMenu('Create character sheet')
+            .addItem('Episode IV', 'createPeopleSheetIV')
+            .addItem('Episode V', 'createPeopleSheetV')
+            .addItem('Episode VI', 'createPeopleSheetVI')
+        )
         .addToUi();
 }
 
